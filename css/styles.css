@@ -6,7 +6,7 @@
 /* background hero и footter: #2F303A; */
 /* цвет h1 и текста в hero и footer:  #FFFFFF;*/
 /* цвет ссілок почты и телефона в footer: rgba(255, 255, 255, 0.6);*/
-/* цвет фона кнопок портфолио #F5F4FA */
+/* цвет фона кнопок портфолио и преимуществ #F5F4FA */
 /* цвет первой части лого #000000 */
 /* цвет рамки портфолио #EEEEE*/
 /* цвет нижней рамки хэдера #ECECEC 1px */
@@ -120,6 +120,24 @@ img {
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
+
+.header-icon {
+  margin-right: 10px;
+  /* display: inline-block;*/
+  /*padding-top: 34px;*/
+  outline: 1px solid red;
+}
+/* .email::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  outline: 1px solid brown;
+  margin-right: 10px;
+  background-size: contain;
+  content: url("../images/icons.svg#icon-envelope");
+} */
+
 /*   ----- конец стилизации Header-------*/
 /* -----стилизация секции hero-----*/
 .main-title {
@@ -251,11 +269,19 @@ img {
   margin-bottom: 30px;
 }
 /* стилизация секции Особенности*/
+
 .differences {
   display: flex;
 }
 .differences-property {
   width: 270px;
+}
+.section-icon {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-color: var(--background-button-portfolio);
+  text-align: center;
 }
 .differences-property:not(:last-child) {
   margin-right: 30px;
