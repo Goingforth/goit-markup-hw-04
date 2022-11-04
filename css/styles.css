@@ -47,6 +47,7 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 1px solid green;
 }
 
 ul {
@@ -207,6 +208,7 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  outline: 1px solid #2196f3;
 }
 .section.differ {
   padding-bottom: 0;
@@ -317,7 +319,6 @@ img {
 .team .social-item {
   width: 44px;
   height: 44px;
-  /* background-color: red;*/
   margin-right: 10px;
   border-radius: 50%;
 }
@@ -332,10 +333,51 @@ img {
   justify-content: center;
   /* border-radius: 50%;*/
 }
+
 .team .social-item:hover {
   background-color: var(--accent-color);
 }
+/* стилизация секции постоянніе клиенты*/
+.clients h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
 
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients .clients-icons {
+  display: flex;
+  justify-content: center;
+}
+.clients .client-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-icon-team);
+  border-radius: 4px;
+  margin-right: 30px;
+}
+.clients .client-item:last-child {
+  margin-right: 0;
+}
+.clients .client-icon {
+  fill: var(--color-icon-team);
+}
+.clients-icons .client-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients .client-link:hover .client-icon {
+  fill: var(--accent-color);
+}
+.clients .client-item:hover {
+  border: 1px solid var(--accent-color);
+}
+/* конец стилизации секции постоянніе клиенты*/
 /* стилизация секций портфолио*/
 .portfolio-filter {
   display: flex;
