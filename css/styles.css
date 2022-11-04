@@ -311,7 +311,8 @@ img {
 .team .social-icon {
   fill: var(--color-icon-team);
 }
-.team .social-link:hover .social-icon {
+.team .social-link:hover .social-icon,
+.team .social-link:focus .social-icon {
   fill: var(--h1-footer-color);
 }
 .team .social-item {
@@ -329,12 +330,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border-radius: 50%;*/
+  border-radius: 50%;
 }
 
-.team .social-item:hover {
+.team .social-link:hover,
+.team .social-link:focus {
   background-color: var(--accent-color);
 }
+
 /* стилизация секции постоянніе клиенты*/
 .clients h2 {
   font-weight: 700;
@@ -369,10 +372,12 @@ img {
   justify-content: center;
 }
 
-.clients .client-link:hover .client-icon {
+.clients .client-link:hover .client-icon,
+.clients .client-link:focus .client-icon {
   fill: var(--accent-color);
 }
-.clients .client-item:hover {
+.clients .client-item:hover,
+.clients .client-item:focus {
   border: 1px solid var(--accent-color);
 }
 /* конец стилизации секции постоянніе клиенты*/
