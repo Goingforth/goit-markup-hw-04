@@ -11,6 +11,7 @@
 /* цвет рамки портфолио #EEEEE*/
 /* цвет нижней рамки хэдера #ECECEC 1px */
 /* цвет иконок team  #AFB1B8*/
+/* фоновый цвет иконок футера rgba(255, 255, 255, 0.1)*/
 :root {
   --header-color: #212121;
   --p-color: #757575;
@@ -24,6 +25,7 @@
   --border-card-portfolio: #eeeeee;
   --border-botton-header: #ececec;
   --color-icon-team: #afb1b8;
+  --color-background-icon-footer: rgba(255, 255, 255, 0.1);
 }
 body {
   color: var(--header-color);
@@ -451,6 +453,60 @@ footer .logo {
   color: var(--mail-phone-color-footer);
   text-decoration: none;
 }
+/* стилизация иконок соцсетей в футере */
+.container.foot {
+  display: flex;
+}
+.box {
+  width: 231px;
+}
+.container-social {
+  position: relative;
+  left: 70px;
+  top: 72px;
+  display: inline-block;
+  width: 206px;
+  height: 80px;
+}
+.footer-social {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--h1-footer-color);
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.footer-social-item:last-child {
+  margin-right: 0;
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.footer-social-link {
+  background: var(--color-background-icon-footer);
+  fill: var(--h1-footer-color);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background: var(--accent-color);
+}
+
+/* */
 
 /*  стилизация кнопок портфолио */
 .button-portfolio {
