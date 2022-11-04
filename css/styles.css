@@ -47,7 +47,6 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid green;
 }
 
 ul {
@@ -123,23 +122,21 @@ img {
   line-height: 1.33;
   letter-spacing: 0.02em;
 }
-
-.header-icon {
+.connection .header-icon {
   margin-right: 10px;
-  /* display: inline-block;*/
-  /*padding-top: 34px;*/
-  outline: 1px solid red;
 }
-/* .email::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  outline: 1px solid brown;
-  margin-right: 10px;
-  background-size: contain;
-  content: url("../images/icons.svg#icon-envelope");
-} */
+.connection .link {
+  display: flex;
+  align-items: center;
+  fill: var(--p-color);
+  color: var(--p-color);
+}
+.connection .link:hover .header-icon {
+  fill: var(--accent-color);
+}
+.connection .link:focus .header-icon {
+  fill: var(--accent-color);
+}
 
 /*   ----- конец стилизации Header-------*/
 /* -----стилизация секции hero-----*/
@@ -208,7 +205,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 1px solid #2196f3;
 }
 .section.differ {
   padding-bottom: 0;
