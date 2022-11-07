@@ -467,12 +467,8 @@ footer .logo {
   width: 231px;
 }
 .container-social {
-  position: relative;
-  left: 70px;
-  top: 72px;
-  display: inline-block;
-  width: 206px;
-  height: 80px;
+  margin-top: 72px;
+  margin-left: 70px;
 }
 .footer-social {
   font-weight: 700;
